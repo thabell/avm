@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>AVM - Перевод между системами</title>
+    <link href="normalize.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" width="16" height="16">
+</head>
+
+<body>
+    <div class="header-n-h1-wrap systems">
+        <header class="main-header">
+            <nav class="main-header-logo-n-nav">
+                <a class="main-header-logo" href="index.html" title="Главная">avm</a>
+                <ul class="site-navigation">
+                    <li>
+                        <h3><a>Перевод в СиС</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="logic.html">Арифметика логики</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="about.html">О нас</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="user.html">Профиль</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="map.html">Карта сайта</a></h3>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <h1><span class="h1-bright">Перевод</span> между системами</h1>
+        <p class="h1-annotation">*Перевод из одной системы счисления в другую, одного числа или чисел промежутка с заданным шагом</p>
+
+    </div>
+
+    <main>
+
+        <section class="input systems-input">
+            <h2><span class="h2-bright">Ввод</span> данных</h2>
+            <div class="input-list slider">
+                <div class="pagination input-pagination">
+                    <button type="button" class="one pagination__item">Перевод одного числа</button>
+                    <button type="button" class="multi pagination__item pagination__item--active">Перевод промежутка с заданным шагом</button>
+                </div>
+                <button class="button button-previous" type="button"><span class="visually-hidden">Предыдущий</span></button>
+                <button class="button button-next" type="button"><span class="visually-hidden">Следующий</span></button>
+                <form class="input-item input-one slider__item">
+                    <h3 class="light-text">Введите данные</h3>
+                    <input type="text" name="system_from" placeholder="Из какой системы счисления (S) (до 35)" title="Из какой системы">
+                    <input type="text" name="system_to" placeholder="В какую систему счисления (P)" title="В какую систему">
+                    <input type="text" name="system_more_to" placeholder="Еще в какую систему счисления (Q)" title="Еще в какую систему">
+                    <input type="text" name="start" placeholder="Число для перевода (в Sной)" title="Число">
+                </form>
+                <form class="input-item input-multi slider__item slider__item--active">
+                    <h3 class="light-text">Введите данные</h3>
+                    <input type="text" name="system_from" placeholder="Из какой системы счисления (S) (до 35)" title="Из какой системы">
+                    <input type="text" name="system_to" placeholder="В какую систему счисления (P)" title="В какую систему">
+                    <input type="text" name="system_more_to" placeholder="Еще в какую систему счисления (Q)" title="Еще в какую систему">
+                    <input type="text" name="start" placeholder="Начало промежутка (A)" title="Начало">
+                    <input type="text" name="finish" placeholder="Конец промежутка (B)" title="Конец">
+                    <input type="text" name="step" placeholder="Шаг промежутка для перевода (C) (в Sной)" title="Шаг">
+                </form>
+            </div>
+        </section>
+
+        <div class="submit-back">
+            <section class="submit systems-submit">
+                <h2 class="visually-hidden">Подтверждение перевода</h2>
+                <button type="button" class="button submit-button">Перевести</button>
+            </section>
+        </div>
+
+        <div class="result-back">
+            <section class="result">
+<!--                 <h2><span class="h2-bright">Результат</span> перевода</h2>
+                <div class="result-line result-header">
+                    <div class="result-item">asdfs</div>
+                    <div class="result-item">asdfs</div>
+                    <div class="result-item">asdfs</div>
+                </div>
+                <div class="result-line">
+                    <div class="result-item">33</div>
+                    <div class="result-item">4</div>
+                    <div class="result-item">2</div>
+                </div>
+                <div class="result-line">
+                    <div class="result-item">3</div>
+                    <div class="result-item">5</div>
+                    <div class="result-item">37</div>
+                </div> -->
+            </section>
+        </div>
+
+        <section class="history systems-history">
+            <h2>История переводов</h2>
+            <div class="slider">
+                <figure class="history-item slider__item slider__item--active">
+                    <img src="img/example1.jpg" alt="Пример перевода между системами">
+                    <h3>Пример перевода между системами</h3>
+                </figure>
+                <figure class="history-item slider__item history-refreshing-item">
+                    <div class="history-item-back">
+                        <div class="for-overflow-wrapper">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>ferfref</th>
+                                        <th>ferfref</th>
+                                        <th>ferfref</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>66</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>77</td>
+                                        <td>6</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>E</td>
+                                        <td>6</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </figure>
+                <button class="button button-previous" type="button"><span class="visually-hidden">Предыдущий</span></button>
+                <button class="button button-next" type="button"><span class="visually-hidden">Следующий</span></button>
+                <div class="pagination history-pagination">
+                    <button class="pagination__item pagination__item--active" type="button"><span class="visually-hidden">1</span></button>
+                    <button class="pagination__item history-refreshing-pagination-item" type="button"><span class="visually-hidden">2</span></button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="main-footer-content">
+            <span class="footer-logo">avm</span>
+            <p class="copyrights">
+                All Rights Reserved |  2019  |  Designed and developed with love by <a href="https://vk.com/thabell">Dmitry</a>
+                Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
